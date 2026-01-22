@@ -1,0 +1,28 @@
+#!/usr/bin/bash  
+#SBATCH --job-name=novoplasty 
+#SBATCH -p hugemem
+#SBATCH -c 32
+#SBATCH --mem=100G  
+
+max_jobs=30  # 最大并行任务数
+for i in /public3/group_crf/home/g21mazhy26/Rhinogobius_spp/DNA/02_cleandata/trim_out/*.paired_1.fq.gz; do
+    sBase=`basename $i`
+    sName=${sBase/%.paired_1.fq.gz}
+    sDir=`dirname $i`
+    sR1=$i
+    sR2=${sDir}/${sName}.paired_2.fq.gz
+#    echo ${sName}
+#    echo $sR1
+#    echo $sR2
+
+    sed -e "s|%name%|${sName}|g" -e "s|%R1%|${sR1}|g" -e "s|%R2%|${sR2}|g" config.txt > config.${sName}.txt
+
+		
+    perl NOVOPlasty4.3.1.pl -c config.${sName}.txt &
+
+    # 如果后台任务数达到最大值，等待其中一个完成
+    if [[ $(jobs -r -p | wc -l) -ge $max_jobs ]]; then
+        wait -n  # 等待任意一个后台任务完成
+    fi
+done
+wait  # 等待剩余任务完成
