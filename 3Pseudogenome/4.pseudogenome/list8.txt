@@ -1,0 +1,8 @@
+Rform.fasta	/public3/group_crf/home/g21mazhy26/new_pseudogenome/Rform.fasta
+Z2_R-aporus_Zhejiangpananxianshuangxizhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z2_R-aporus_Zhejiangpananxianshuangxizhen.bam.genotyped.g.vcf.gz
+Z3_R-wuyiensis_Zhejianglongquanshijinxizhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z3_R-wuyiensis_Zhejianglongquanshijinxizhen.bam.genotyped.g.vcf.gz
+Z5_R-niger_Zhejianglongquanshizhulongzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z5_R-niger_Zhejianglongquanshizhulongzhen.bam.genotyped.g.vcf.gz
+Z6_R-giurinus_Zhejianglongquanshizhulongzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z6_R-giurinus_Zhejianglongquanshizhulongzhen.bam.genotyped.g.vcf.gz
+Z7_R-davidi_Zhejianganjixiantianhuangpingzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z7_R-davidi_Zhejianganjixiantianhuangpingzhen.bam.genotyped.g.vcf.gz
+Z8_R-immaculatus_Zhejiangtongluxianlucixiang	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z8_R-immaculatus_Zhejiangtongluxianlucixiang.bam.genotyped.g.vcf.gz
+Z9_R-sp_Zhejiangkaihuaxiansuzhuangzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z9_R-sp_Zhejiangkaihuaxiansuzhuangzhen.bam.genotyped.g.vcf.gz

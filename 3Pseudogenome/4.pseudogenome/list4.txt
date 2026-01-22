@@ -1,0 +1,8 @@
+Rform.fasta	/public3/group_crf/home/g21mazhy26/new_pseudogenome/Rform.fasta
+Z10_R-sp_Zhejianglongquanshizhulongzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z10_R-sp_Zhejianglongquanshizhulongzhen.bam.genotyped.g.vcf.gz
+Z11_R-sp_Zhejiangchangshanxian	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z11_R-sp_Zhejiangchangshanxian.bam.genotyped.g.vcf.gz
+Z12_R-davidi_Zhejiangchangshanxian	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z12_R-davidi_Zhejiangchangshanxian.bam.genotyped.g.vcf.gz
+Z13_R-sp_Zhejiangkaihuaxiansuzhuangzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z13_R-sp_Zhejiangkaihuaxiansuzhuangzhen.bam.genotyped.g.vcf.gz
+Z14_R-lentiginis_Zhejiangyuyaoliangnongzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z14_R-lentiginis_Zhejiangyuyaoliangnongzhen.bam.genotyped.g.vcf.gz
+Z15_R-leavelli_Zhejiangchangshanxian	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z15_R-leavelli_Zhejiangchangshanxian.bam.genotyped.g.vcf.gz
+Z16_R-cf-lentiginis_Zhejiangchangshanxian	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z16_R-cf-lentiginis_Zhejiangchangshanxian.bam.genotyped.g.vcf.gz

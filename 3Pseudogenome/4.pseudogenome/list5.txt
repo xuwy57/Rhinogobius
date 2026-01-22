@@ -1,0 +1,6 @@
+Rform.fasta	/public3/group_crf/home/g21mazhy26/new_pseudogenome/Rform.fasta
+F1_R-cf-rubromaculatus_Fujianputianshi	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/F1_R-cf-rubromaculatus_Fujianputianshi.bam.genotyped.g.vcf.gz
+F2_R-xianshuiensis_Fujianputianshi	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/F2_R-xianshuiensis_Fujianputianshi.bam.genotyped.g.vcf.gz
+F3_R-reticulatus_Fujianpuchengshifulingzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/F3_R-reticulatus_Fujianpuchengshifulingzhen.bam.genotyped.g.vcf.gz
+F4_R-reticulatus_Fujianfuzhou	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/F4_R-reticulatus_Fujianfuzhou.bam.genotyped.g.vcf.gz
+GX3_R-sp_Guangxifangchenggangmaluzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/GX3_R-sp_Guangxifangchenggangmaluzhen.bam.genotyped.g.vcf.gz

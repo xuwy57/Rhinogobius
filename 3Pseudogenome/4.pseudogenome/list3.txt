@@ -1,0 +1,6 @@
+Rform.fasta	/public3/group_crf/home/g21mazhy26/new_pseudogenome/Rform.fasta
+HN3_R-leavelli_Hainanzhanzhoudachengzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/HN3_R-leavelli_Hainanzhanzhoudachengzhen.bam.genotyped.g.vcf.gz
+HN4_R-leavelli_Hainanbaotingshilingzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/HN4_R-leavelli_Hainanbaotingshilingzhen.bam.genotyped.g.vcf.gz
+HN5_R-linshuiensis_Hainanbaotingshilingzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/HN5_R-linshuiensis_Hainanbaotingshilingzhen.bam.genotyped.g.vcf.gz
+HN6_R-sp_Hainanhaikou	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/HN6_R-sp_Hainanhaikou.bam.genotyped.g.vcf.gz
+J1_R-sp_Jiangxipingxiangshianyuanqu	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/J1_R-sp_Jiangxipingxiangshianyuanqu.bam.genotyped.g.vcf.gz

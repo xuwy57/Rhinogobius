@@ -1,0 +1,8 @@
+Rform.fasta	/public3/group_crf/home/g21mazhy26/new_pseudogenome/Rform.fasta
+S1_R-szechuanensis_Sichuan	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/S1_R-szechuanensis_Sichuan.bam.genotyped.g.vcf.gz
+Z17_R-cliffordpopei_Zhejiangchangshanxian	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z17_R-cliffordpopei_Zhejiangchangshanxian.bam.genotyped.g.vcf.gz
+Z18_R-cliffordpopeiR-leavelli_Zhejiangchangshanxia	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z18_R-cliffordpopeiR-leavelli_Zhejiangchangshanxia.bam.genotyped.g.vcf.gz
+Z19_R-aporus_Zhejiangwuyixianchengqu	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z19_R-aporus_Zhejiangwuyixianchengqu.bam.genotyped.g.vcf.gz
+Z1_R-sp_Zhejianglongquanshizhulongzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z1_R-sp_Zhejianglongquanshizhulongzhen.bam.genotyped.g.vcf.gz
+Z20_R-aporus_Zhejiangwuyixianxilianxiang	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z20_R-aporus_Zhejiangwuyixianxilianxiang.bam.genotyped.g.vcf.gz
+Z21_R-sp_Zhejiangchangshanxiansianzhen	/public3/group_crf/home/g21mazhy26/new_pseudogenome/gvcf/Z21_R-sp_Zhejiangchangshanxiansianzhen.bam.genotyped.g.vcf.gz
