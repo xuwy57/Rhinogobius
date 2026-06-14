@@ -23,14 +23,14 @@ clades <- list(
              "H2_R-sp_Hunanloudilouxingqu", "Z9_R-sp_Zhejiangkaihuaxiansuzhuangzhen",
              "Z8_R-immaculatus_Zhejiangtongluxianlucixiang", "Z10_R-sp_Zhejianglongquanshizhulongzhen")
 )
-Amphidromous <- c('GX1_R-sp_Guangxinanning', 'L1_R-cf-brunneus_Liaoningkuandian',
+Amphidromous <- c('L1_R-cf-brunneus_Liaoningkuandian',
                   'HN3_R-leavelli_Hainanzhanzhoudachengzhen', 'HN4_R-leavelli_Hainanbaotingshilingzhen',
-                  'HN6_R-sp_Hainanhaikou', 'Z15_R-leavelli_Zhejiangchangshanxian',
-                  'Z17_R-cliffordpopei_Zhejiangchangshanxian', 'Z18_R-cliffordpopeiR-leavelli_Zhejiangchangshanxia')
+                  'Z15_R-leavelli_Zhejiangchangshanxian',
+                  'Z17_R-cliffordpopei_Zhejiangchangshanxian', 'Z18_R-cliffordpopeiR-leavelli_Zhejiangchangshanxia', 'Z6_R-giurinus_Zhejianglongquanshizhulongzhen')
 
 
 
-setwd("/fast3/group_crf/home/b20xuwy57/Rhinogobius_spp/cafe5/family_test0122")
+setwd("/fast3/group_crf/home/b20xuwy57/Rhinogobius_spp/cafe5/family_test0401")
 input_file <- "orthogroups.genecount.txt"
 input_file <- "Rformosanus.orthogroups.genecount.txt"
 data <- read.table(input_file, header = TRUE, sep = "\t", check.names = FALSE)
@@ -67,7 +67,7 @@ run_significance_test <- function(data, clade_name, clade_members, comparison_gr
     result$Clade_Avg[i] <- clade_avg
     result$Amphidromous_Avg[i] <- amphidromous_avg
     result$Expansion_Status[i] <- ifelse(clade_avg > amphidromous_avg, "Expanded", "Contracted")
-  
+    
   }
   
   # 添加 FDR 校正列
@@ -75,7 +75,7 @@ run_significance_test <- function(data, clade_name, clade_members, comparison_gr
   
   # 输出显著性结果
   significant_results <- result %>%
-    filter(!is.na(FDR) & FDR < 0.2) %>%
+    filter(!is.na(FDR) & FDR < 0.05) %>%
     arrange(FDR)
   
   # 保存结果到文件
@@ -87,9 +87,9 @@ run_significance_test <- function(data, clade_name, clade_members, comparison_gr
 }
 
 # 运行显著性检验
-clade2_results <- run_significance_test(data, "Clade2", clades$Clade2, Amphidromous, "clade2_vs_amphidromous_fdr0.2_results.csv", "clade2_vs_amphidromous_all_results.csv")
-clade5_results <- run_significance_test(data, "Clade5", clades$Clade5, Amphidromous, "clade5_vs_amphidromous_fdr0.2_results.csv", "clade5_vs_amphidromous_all_results.csv")
-clade7_results <- run_significance_test(data, "Clade7", clades$Clade7, Amphidromous, "clade7_vs_amphidromous_fdr0.2_results.csv", "clade7_vs_amphidromous_all_results.csv")
+clade2_results <- run_significance_test(data, "Clade2", clades$Clade2, Amphidromous, "clade2_vs_amphidromous_fdr0.05_results.csv", "clade2_vs_amphidromous_all_results.csv")
+clade5_results <- run_significance_test(data, "Clade5", clades$Clade5, Amphidromous, "clade5_vs_amphidromous_fdr0.05_results.csv", "clade5_vs_amphidromous_all_results.csv")
+clade7_results <- run_significance_test(data, "Clade7", clades$Clade7, Amphidromous, "clade7_vs_amphidromous_fdr0.05_results.csv", "clade7_vs_amphidromous_all_results.csv")
 
 # 打印显著性结果
 print("Clade2 vs Amphidromous significant results:")
@@ -100,4 +100,4 @@ print(clade5_results)
 
 print("Clade7 vs Amphidromous significant results:")
 print(clade7_results)
-
+r
