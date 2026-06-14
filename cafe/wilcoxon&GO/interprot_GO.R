@@ -9,13 +9,14 @@ library(AnnotationForge) #加载
 options(stringsAsFactors = F)
 
 # with danio_rerio oryzias_latipes
+setwd("/fast3/group_crf/home/b20xuwy57/Rhinogobius_spp/GO")
 sSp <- "RhinogobiusFormosanus";
 sTERM2GO <- paste0(sSp, "_term2go.tsv");
 datAllGO <- read.table(sTERM2GO, sep="\t", header=T, stringsAsFactors = T);
 colnames(datAllGO) <- c("GO", "GID")
 pather <- read.csv("./interprotscan/Rform.prot_no_stop.fasta.tsv", sep='\t', header=T, stringsAsFactors=FALSE)
 
-setwd("/fast3/group_crf/home/b20xuwy57/Rhinogobius_spp/cafe5/family_test0125")
+setwd("/fast3/group_crf/home/b20xuwy57/Rhinogobius_spp/cafe5/family_test0401")
 go_long <- pather %>%
   separate_rows(GO, sep = "\\|") %>%
   rename(GeneID = Protein_id, GO = GO)
@@ -42,7 +43,7 @@ n0_data <- read.table("/fast3/group_crf/home/b20xuwy57/Rhinogobius_spp/genespace
 # 提取 OG 和 RhinogobiusFormosanus 列
 og_rhinogobius_data <- n0_data[, c("OG", "RhinogobiusFormosanus")]
 # 读取 CSV 文件，假设文件包含 Orthogroup 和 Clade_Avg 列
-csv_data <- read.csv("/fast3/group_crf/home/b20xuwy57/Rhinogobius_spp/cafe5/family_test0122/clade7_vs_amphidromous_all_results.csv")
+csv_data <- read.csv("/fast3/group_crf/home/b20xuwy57/Rhinogobius_spp/cafe5/family_test0122/clade2_vs_amphidromous_all_results.csv")
 set.seed(123)  # 全局设置随机种子
 # 预处理数据 ----
 og_rhinogobius <- n0_data %>%
@@ -112,7 +113,7 @@ n0_modified <- n0_data %>%
     by = "OG"
   )
 # 保存结果 ----
-write.table(n0_modified, "N0_modified_clade7.tsv", sep="\t", row.names=FALSE, quote=FALSE)
+write.table(n0_modified, "N0_modified_clade2.tsv", sep="\t", row.names=FALSE, quote=FALSE)
 
 
 
@@ -126,18 +127,18 @@ write.table(n0_modified, "N0_modified_clade7.tsv", sep="\t", row.names=FALSE, qu
 AnnotationForge::makeOrgPackage(
   gene_data = final_data_gene2go,
   go = final_data_gene2go,
-  version = "3.0",
+  version = "3.0406.0",
   maintainer = 'Wanying Xu <xuwy57@mail2.sysu.edu.cn>',
   author = "Wanying Xu",
   outputDir = ".",  # 输出目录
   tax_id = "508009",
   genus = "Rhinogobius",
-  species = "formosanus.clade7",
+  species = "formosanus.clade2",
   goTable = "go"
 )
-install.packages('org.Rformosanus.clade7.eg.db',repos = NULL, type="source") #安装包
+install.packages('org.Rformosanus.clade2.eg.db',repos = NULL, type="source") #安装包
 library(org.Rformosanus.clade2.eg.db) #加载包
-remove.packages("org.Rformosanus.v2.eg.db" , lib = file.path("/public3/group_crf/home/b20xuwy57/R/x86_64-pc-linux-gnu-library"))
+remove.packages("org.Rformosanus.clade5.eg.db" , lib = file.path("/public3/group_crf/home/b20xuwy57/R/x86_64-pc-linux-gnu-library/4.3"))
 
 
 
